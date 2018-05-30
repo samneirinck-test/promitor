@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.0-sdk@sha256:16fbc9aec9cdef978cecf6255f61f9c7dec4ca03d00ba731da6ab5fa1bfdc340 AS build
+FROM microsoft/dotnet:2.1-sdk@sha256:d1ad61421f637a4fe6443f2ec204cca9fe10bf833c31adc6ce70a4f66406375e AS build
 WORKDIR /build
 COPY . /dotnet-sources/.
 RUN dotnet publish /dotnet-sources/Promitor.Scraper.csproj --configuration release -o output
